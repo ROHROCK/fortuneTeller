@@ -1,18 +1,19 @@
-import Loader from './Components/Loader/Loader';
-import {Container} from 'react-bootstrap';
+import Loader from "./Components/Loader/Loader";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
-    <Container id="bgContainer" fluid>
-      <div className="App">
-        {/* Header */}
-        {/* Body */}
-        {/* Footer */}
-        {/* <Loader/> */}
-        {/* <button>Click Here to know your fortune</button> */}
-        Hello
-      </div>
-    </Container>
+    <div
+      style={{
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      <button>Click Here to see your fortune !</button>
+    </div>
   );
 }
 
