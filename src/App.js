@@ -1,18 +1,30 @@
-import Loader from './Components/Loader/Loader';
-import {Container} from 'react-bootstrap';
+import { lazy, Suspense } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Loading from './Components/Loader/Loader';
+
+const Home = lazy(() => import('./Pages/Home'));
+const About = lazy(() => import('./Pages/About'));
+const NotFound = lazy(() => import('./Pages/About'));
 
 function App() {
   return (
-    <Container id="bgContainer" fluid>
-      <div className="App">
-        {/* Header */}
-        {/* Body */}
-        {/* Footer */}
-        {/* <Loader/> */}
-        {/* <button>Click Here to know your fortune</button> */}
-        Hello
-      </div>
-    </Container>
+    <div className="App">
+          <BrowserRouter>
+            <Routes/>
+          </BrowserRouter>
+    </div>
+  );
+}
+
+function Routes() {
+  return (
+          <Suspense fallback={<Loading/>}>
+            <Switch>
+              <Route exact path="/" component={Home}/>
+              <Route path="/about" component={About} />
+              <Route component={NotFound} />
+            </Switch>
+          </Suspense>
   );
 }
 
