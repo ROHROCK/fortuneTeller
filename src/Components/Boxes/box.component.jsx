@@ -1,41 +1,29 @@
 import React, { Component } from "react";
-import "./box.css";
+import './box.css'
 import { Link } from "react-router-dom";
 
-class Color_Box extends Component {
+class Box extends Component {
   render() {
     return (
-      <div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            margin: "20px",
-            padding: "10px",
-            height: "100vh",
-          }}
-        >
-          <div className="flex-container1">
-            <Link to="/numberPicker">
-              <div className="box1"></div>
-            </Link>
-
-            <div className="box2"></div>
-          </div>
-          <div className="flex-container1">
-            <div className="box3"></div>
-
-            <div className="box4"></div>
-          </div>
-          
+      <div style={{ display:"flex",height: "100vh",
+      width:"100wh",justifyContent: "center",
+      alignItems: "center",}}>
+        <div>
+        <div style={{display:"flex"}}>
+          <Link to="/numberPicker"><div className="box1"></div></Link>
+          <Link to="/numberPicker"><div className="box2"></div></Link>
         </div>
-        <div id="question-id" style={{ paddingTop: "10vh" ,color:'white'}}>
-          <h1>Select the color you want</h1>
+        <div style={{display:"flex"}}>
+        <Link to="/numberPicker"><div className="box3"></div></Link>
+          <Link to="/numberPicker"><div className="box4"></div></Link>
         </div>
-      </div>
+        <div style={{display:"flex" ,color:"white",paddingTop:'10vh'}}>
+          <h1>Please select any color</h1>
+        </div>
+        </div>
+      </div> 
     );
   }
 }
 
-export default Color_Box;
+export default Box;

@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import "./number-picker.css";
-import { Container } from "react-bootstrap";
 
 class NumberPicker extends Component {
   render() {
     return (
       <div
         id="numberpickerdiv"
-        className="flex"
         style={{
           display:"flex",
           height: "100vh",
