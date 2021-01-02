@@ -29,7 +29,7 @@ function Routes() {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/numberPicker" component={NumberPicker} />
-        <Route path="/fortune" component={FortuneTeller} />
+        {/* <Route path="/fortune" component={FortuneTeller} /> */}
         <Route component={NotFound} />
       </Switch>
     </Suspense>
