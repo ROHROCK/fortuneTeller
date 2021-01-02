@@ -63,8 +63,6 @@ function Home() {
             height: "90vh",
             flex: "1 1 0px",
             flexDirection: "column",
-            flexWrap: "wrap",
-            justifyContent: "space-evenly",
           }}
         >
           <div
@@ -72,7 +70,6 @@ function Home() {
             style={{
               alignSelf: "center",
               justifySelf: "center",
-              paddingBottom: "10px",
             }}
           >
             <Link to="/fortune">
@@ -91,16 +88,8 @@ function Home() {
               src={Table}
               style={{
                 width: "40vh",
-                height: "40vh",
-              }}
-              alt="Table"
-            />
-            <img
-              src={Candle}
-              style={{
-                width: "10vh",
-                height: "20vh",
-                paddingBottom: "20px",
+                alignS: "flex-end",
+                height: "30vh",
               }}
               alt="Table"
             />
