@@ -1,0 +1,39 @@
+{
+    "fortunes":[
+        {
+            "id":1,
+            "fortune": "All your hard work will soon pay off!!"
+        },
+        {
+            "id":2,
+            "fortune": "Good luck is coming your way!!"
+        },
+        {
+            "id":3,
+            "fortune": "A secret admirer will soon show how they feel!!"
+        },
+        {
+            "id":4,
+            "fortune": "You will be invited to an exciting event!!"
+        },
+        {
+            "id":5,
+            "fortune": "The more you give, the more you'll have!!"
+        },
+        {
+            "id":6,
+            "fortune": "Do a good deed today!!"
+        },
+        {
+            "id":7,
+            "fortune": "Your hidden talents will soon be revealed!!"
+        },
+        {
+            "id":8,
+            "fortune": "Just take one step at a time!!"
+        }
+        
+
+    ]
+
+}
