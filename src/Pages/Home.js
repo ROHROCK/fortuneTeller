@@ -1,8 +1,8 @@
 import React from "react";
 import Table from "../Assets/Icons/table.svg";
 import Hand from "../Assets/Icons/hand.svg";
-import Flower from "../Assets/Icons/flower.svg";
-import { Link } from "react-router-dom";
+// import Flower from "../Assets/Icons/flower.svg";
+// import { Link } from "react-router-dom";
 
 function Home() {
   return (
