@@ -9,9 +9,9 @@ const Box = lazy(() => import("./Components/Boxes/box.component"));
 const Home = lazy(() => import("./Pages/Home"));
 const About = lazy(() => import("./Pages/About"));
 const NotFound = lazy(() => import("./Pages/About"));
-const FortuneTeller = lazy(() =>
-  import("./Components/Fortune-Teller/fortune-teller.component")
-);
+// const FortuneTeller = lazy(() =>
+//   import("./Components/Fortune-Teller/fortune-teller.component")
+// );
 
 function App() {
   return (

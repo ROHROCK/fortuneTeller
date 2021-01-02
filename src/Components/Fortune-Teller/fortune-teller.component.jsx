@@ -10,8 +10,8 @@ class FortuneTeller extends Component {
         this.state = {
             modalIsOpen: false,
         }
-        const openModal = this.openModal.bind(this);
-        const closeModal = this.closeModal.bind(this);
+        // const openModal = this.openModal.bind(this);
+        // const closeModal = this.closeModal.bind(this);
     }
 
     openModal = () => {
