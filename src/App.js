@@ -3,6 +3,7 @@ import { lazy, Suspense } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Loading from "./Components/Loader/Loader";
 import NumberPicker from "./Components/Number-Picker/number-picker.component";
+import NavbarComponent from "./Components/Navbar/navbar.component";
 
 const Box = lazy(() => import("./Components/Boxes/box.component"));
 const Home = lazy(() => import("./Pages/Home"));
@@ -15,6 +16,7 @@ const FortuneTeller = lazy(() =>
 function App() {
   return (
     <div className="App">
+      <NavbarComponent />
       <BrowserRouter>
         <Routes />
       </BrowserRouter>
