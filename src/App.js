@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Loading from "./Components/Loader/Loader";
 import NumberPicker from "./Components/Number-Picker/number-picker.component";
 
+const Box = lazy(() => import("./Components/Boxes/box.component"));
 const Home = lazy(() => import("./Pages/Home"));
 const About = lazy(() => import("./Pages/About"));
 const NotFound = lazy(() => import("./Pages/About"));
@@ -14,7 +15,6 @@ const FortuneTeller = lazy(() =>
 function App() {
   return (
     <div className="App">
-      {/* <Fortune/> */}
       <BrowserRouter>
         <Routes />
       </BrowserRouter>
@@ -29,7 +29,7 @@ function Routes() {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/numberPicker" component={NumberPicker} />
-        {/* <Route path="/fortune" component={FortuneTeller} /> */}
+        <Route path="/fortune" component={Box} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>
