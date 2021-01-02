@@ -1,14 +1,44 @@
 import React, { Component } from "react";
 import "./number-picker.css";
+import fortuneJSON from "../../Assets/Icons/data/fortunes.json";
 
 class NumberPicker extends Component {
+  constructor(){
+    super();
+    this.state = {
+      prevColorSelected:""
+    }
+    // eslint-disable-next-line
+    let pickRandomFortune = this.pickRandomFortune.bind(this);
+  }
+  // Logic to pick parse random fortune when color is picked
+  pickRandomFortune = () =>{
+    let oddIndex = [7,2,3,6];
+    let evenIndex = [0,1,4,5];
+    let fortuneSelected = [];
+    // console.log("This selected color is: ",this.props.location.state);
+    
+    let parseIndex = (this.props.location.state.colorSelected.length % 2 !== 0)?oddIndex:evenIndex;
+    
+    parseIndex.forEach((index)=>{
+      fortuneSelected.push(fortuneJSON.fortunes[index]);
+    this.setState({fortune:fortuneSelected,numberIndex:parseIndex,prevColorSelected:this.props.location.state.colorSelected});
+    });
+    // console.log("The fortunes are: ",fortuneSelected);
+  }
+
   render() {
+    if (this.props.location.state.colorSelected !== this.state.prevColorSelected){
+      this.pickRandomFortune();
+      console.log(this.props.numberIndex);
+    }
+    
     return (
       <div
         id="numberpickerdiv"
         style={{
           display:"flex",
-          height: "100vh",
+          height: "87vh",
           justifyContent: "center",
           alignContent: "center",
           flexDirection: "column",
@@ -38,8 +68,8 @@ class NumberPicker extends Component {
                   width: "30vh",
                   margin: "5px",
                 }}
-              >
-                <h1>1</h1>
+                >
+                <h1>{(this.state.numberIndex === undefined)?"Wait":this.state.numberIndex[0]}</h1>
               </div>
               <div
                 id="number2"
@@ -49,8 +79,8 @@ class NumberPicker extends Component {
                   width: "30vh",
                   margin: "5px",
                 }}
-              >
-                <h1>2</h1>
+                >
+                <h1>{(this.state.numberIndex === undefined)?"Wait":this.state.numberIndex[1]}</h1>
               </div>
             </div>
             <div
@@ -68,8 +98,8 @@ class NumberPicker extends Component {
                   width: "30vh",
                   margin: "5px",
                 }}
-              >
-                <h1>3</h1>
+                >
+                <h1>{(this.state.numberIndex === undefined)?"Wait":this.state.numberIndex[2]}</h1>
               </div>
               <div
                 id="number4"
@@ -79,8 +109,8 @@ class NumberPicker extends Component {
                   width: "30vh",
                   margin: "5px",
                 }}
-              >
-                <h1>4</h1>
+                >
+                <h1>{(this.state.numberIndex === undefined)?"Wait":this.state.numberIndex[3]}</h1>
               </div>
             </div>
           </div>
