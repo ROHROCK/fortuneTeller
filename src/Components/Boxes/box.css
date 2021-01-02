@@ -1,0 +1,45 @@
+.Main{
+ 
+}
+
+.flex-container1{
+    flexDirection:"column";
+}
+.flex-container2{
+    flexDirection:"column";
+}
+.box1{
+    background-color:green;
+    border-radius: 10px;
+    color:"#fff";
+    height:200px;
+    width:200px;
+    margin: 5px;
+}
+
+.box2{
+    background-color:red;
+    border-radius: 10px;
+    color:"#fff";
+    height:200px;
+    width:200px;
+    margin: 5px;
+}
+
+.box3{
+    background-color:blue;
+    border-radius: 10px;
+    color:"#fff";
+    height:200px;
+    width:200px;
+    margin: 5px;
+}
+
+.box4{
+    background-color:yellow;
+    border-radius: 10px;
+    color:"#fff";
+    height:200px;
+    width:200px;
+    margin: 5px;
+}
