@@ -2,6 +2,7 @@ import "./App.css";
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Loading from "./Components/Loader/Loader";
+import NumberPicker from "./Components/Number-Picker/number-picker.component";
 
 const Home = lazy(() => import("./Pages/Home"));
 const About = lazy(() => import("./Pages/About"));
@@ -27,6 +28,7 @@ function Routes() {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/fortune" component={Fortune} />
+        <Route path="/numberPicker" component={NumberPicker} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

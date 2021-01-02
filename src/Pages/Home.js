@@ -2,7 +2,7 @@ import React from "react";
 import Table from "../Assets/Icons/table.svg";
 import Hand from "../Assets/Icons/hand.svg";
 // import Flower from "../Assets/Icons/flower.svg";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Candle from "../Assets/Icons/candle.svg";
 
 function Home() {
@@ -75,7 +75,9 @@ function Home() {
               paddingBottom: "10px",
             }}
           >
-            <button src={Table}>Click Here to check fortune</button>
+            <Link to="/fortune">
+              <h1>Click Here to check fortune</h1>
+            </Link>
           </div>
 
           <div
@@ -131,7 +133,7 @@ function Home() {
             <img
               src={Hand}
               style={{
-                width: "10vh",
+                width: "15vh",
                 align: "flex-end",
                 height: "30vh",
               }}
