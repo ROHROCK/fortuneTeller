@@ -75,7 +75,7 @@ function Home() {
               paddingBottom: "10px",
             }}
           >
-            <Link to="/fortune">
+            <Link to="/box">
               <h1>Click Here to check fortune</h1>
             </Link>
           </div>
