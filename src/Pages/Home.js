@@ -3,6 +3,7 @@ import Table from "../Assets/Icons/table.svg";
 import Hand from "../Assets/Icons/hand.svg";
 // import Flower from "../Assets/Icons/flower.svg";
 // import { Link } from "react-router-dom";
+import Candle from "../Assets/Icons/candle.svg";
 
 function Home() {
   return (
@@ -62,6 +63,8 @@ function Home() {
             height: "90vh",
             flex: "1 1 0px",
             flexDirection: "column",
+            flexWrap: "wrap",
+            justifyContent: "space-evenly",
           }}
         >
           <div
@@ -69,6 +72,7 @@ function Home() {
             style={{
               alignSelf: "center",
               justifySelf: "center",
+              paddingBottom: "10px",
             }}
           >
             <button src={Table}>Click Here to check fortune</button>
@@ -85,8 +89,16 @@ function Home() {
               src={Table}
               style={{
                 width: "40vh",
-                alignS: "flex-end",
-                height: "30vh",
+                height: "40vh",
+              }}
+              alt="Table"
+            />
+            <img
+              src={Candle}
+              style={{
+                width: "10vh",
+                height: "20vh",
+                paddingBottom: "20px",
               }}
               alt="Table"
             />
