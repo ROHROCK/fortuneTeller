@@ -34,7 +34,7 @@ class FortuneTeller extends Component {
     render() {
         return (
             <div>
-                <Modal style={{ marginTop: '50%' }} show={this.state.modalIsOpen} onHide={this.closeModal} animation={false}>
+                <Modal show={this.state.modalIsOpen} onHide={this.closeModal} animation={false}>
                     <Modal.Header closeButton>
                         <Modal.Title>Fortune Teller</Modal.Title>
                     </Modal.Header>

@@ -6,6 +6,7 @@ class NavbarComponent extends Component {
   render() {
     return (
       <nav className="navbar navbar-light bg-light" href="#">
+        {/* eslint-disable-next-line */}
         <a className="navbar-brand">
           <BrowserRouter>
             <Link to="/">
