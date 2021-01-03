@@ -9,7 +9,7 @@ class Creator extends Component {
             <div className="card-body">
                 <h5 className="card-title">Rohit</h5>
                 <p className="card-text">Hey I am rohit , Nice to meet you !</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="www.google.com" class="btn btn-primary">Go somewhere</a>
             </div>
            </div>
       </div>

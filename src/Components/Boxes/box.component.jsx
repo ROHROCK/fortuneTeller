@@ -9,8 +9,7 @@ class Box extends Component {
       className="main-container"
         style={{
           display: "flex",
-          height: "100vh",
-          width: "80vh",
+          height: "80vh",
           justifyContent: "center",
           alignItems: "center",
         }}
