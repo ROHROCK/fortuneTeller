@@ -40,7 +40,6 @@ function About() {
                         <div >
                             <h1>Meet the Creators !</h1>
                         </div>
-                        <Creator />
                     </div>
                 </div>
             </div>
