@@ -36,8 +36,8 @@
 
 @media screen and (max-width: 800px) {
     .box1, .box2, .box3, .box4{
-      width: 25vh; /* The width is 100%, when the viewport is 800px or smaller */
-      height: 25vh;
+      width: 20vh; /* The width is 100%, when the viewport is 800px or smaller */
+      height: 20vh;
         
     }
     .text-color, h1 {
@@ -45,3 +45,4 @@
     }
 
   }
+ 

@@ -52,7 +52,7 @@ function Home() {
             flex: "1 1 0px",
             flexDirection: "column",
             flexWrap: "wrap",
-            justifyContent: "space-evenly",
+            justifyContent: "flex-end",
           }}
         >
           <div
@@ -60,11 +60,11 @@ function Home() {
             style={{
               alignSelf: "center",
               justifySelf: "center",
-              paddingBottom: "10px",
+              paddingBottom: "15vh"
             }}
           >
             <Link to="/box">
-              <button className="Fortune_button">
+              <button className="Fortune_button" style={{height:'20vh'}}>
                 Check My fortune
                 <ChevronRight className="Hello"/>
               </button>
@@ -103,9 +103,10 @@ function Home() {
           <div
             style={{
               alignSelf: "center",
+              paddingBottom:"20vh"
             }}
           >
-            <Hand  width="15vh" height="30vh"/>
+            <Hand width="15vh" height="30vh"/>
           </div>
         </div>
       </div>

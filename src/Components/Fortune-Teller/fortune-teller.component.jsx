@@ -11,9 +11,9 @@ class FortuneTeller extends Component {
         super();
         this.state = {
             modalIsOpen: false,
-            message: 'This is your fortune of the day: '
+            message: 'This is your fortune of the day: ',
+            fortune: '',
         }
-
     }
 
     render() {
