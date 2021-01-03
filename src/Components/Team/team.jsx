@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import RohitImage from "../../Assets/Icons/Team/Rohit.jpeg";
-// import KausarImage from "";
+import KausarImage from "../../Assets/Icons/Team/Kausar.jpeg";
 // import VikrantImage form "";
 // import RiteshImage from "";
 
@@ -16,9 +16,9 @@ var info = [
     profilePath: RohitImage,
   },
   {
-    name: "Rohit",
-    desc: "I am a full stack engineer and a SQA Engineer by Profession",
-    profilePath: RohitImage,
+    name: "Kausar",
+    desc: "I am a Software Tester at Amdocs , Experience in front-end development",
+    profilePath: KausarImage,
   },
   {
     name: "Rohit",
