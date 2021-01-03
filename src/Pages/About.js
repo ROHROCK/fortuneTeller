@@ -6,7 +6,7 @@ function About() {
             <div style={{backgroundColor:"green",height:"20vh",textAlign:"center"}}>
                 <h1>Welcome to Fortune Teller "Add globe emoji here"!</h1>
                 <h2>This is project is inspired by the New year new hack conducted by MLH </h2>
-                <a href="#"><p>Click Here to learn more</p></a>
+                <a href="https://bucharitesh.in"><p>Click Here to learn more</p></a>
             </div>
             <div id="techStack">
                 <h1>Tech stack used</h1>

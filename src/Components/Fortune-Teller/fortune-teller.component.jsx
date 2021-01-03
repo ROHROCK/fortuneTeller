@@ -13,7 +13,9 @@ class FortuneTeller extends Component {
             modalIsOpen: false,
             message: 'This is your fortune of the day: '
         }
+        // eslint-disable-next-line
          const openModal = this.openModal.bind(this);
+        // eslint-disable-next-line
          const closeModal = this.closeModal.bind(this);
     }
     componentDidMount() {
