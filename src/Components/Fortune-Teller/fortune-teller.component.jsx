@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './fortune-teller.css'
 import { Button, Modal } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 class FortuneTeller extends Component {
 
@@ -9,11 +10,14 @@ class FortuneTeller extends Component {
         super();
         this.state = {
             modalIsOpen: false,
+            message: 'This is your fortune of the day: '
         }
         // const openModal = this.openModal.bind(this);
         // const closeModal = this.closeModal.bind(this);
     }
-
+    componentDidMount() {
+        this.openModal();
+    }
     openModal = () => {
         this.setState({ modalIsOpen: true });
     }
@@ -30,22 +34,17 @@ class FortuneTeller extends Component {
     render() {
         return (
             <div>
-                <Button variant="primary" onClick={this.openModal}>
-                    Launch demo modal
-                </Button>
-
-                <Modal show={this.state.modalIsOpen} onHide={this.closeModal} animation={false}>
+                <Modal style={{ marginTop: '50%' }} show={this.state.modalIsOpen} onHide={this.closeModal} animation={false}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Modal heading</Modal.Title>
+                        <Modal.Title>Fortune Teller</Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                    <Modal.Body>{this.state.message + this.props.location.state.fortune}</Modal.Body>
                     <Modal.Footer>
-                        <Button variant="secondary" onClick={this.closeModal}>
-                            Close
+                        <Link to={{ pathname: '/' }}>
+                            <Button variant="secondary" onClick={this.closeModal}>
+                                Restart
                         </Button>
-                        <Button variant="primary" onClick={this.closeModal}>
-                            Save Changes
-                        </Button>
+                        </Link>
                     </Modal.Footer>
                 </Modal>
             </div>
