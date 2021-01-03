@@ -12,10 +12,10 @@ function navbar() {
                 </Link>
             </div>
             <div className="nav_Right">
-            <NavLink exact={true} activeClassName='selected' to='/'>
+            <NavLink exact={true} style={{textDecoration: 'none'}} activeClassName='selected' to='/'>
                 <p data-text="Home" className="nav_Items nav_Items-hover">Home</p>
             </NavLink>
-            <NavLink activeClassName='selected' to='/about'>
+            <NavLink style={{textDecoration: 'none'}} to='/about' activeClassName='selected'>
                 <p data-text="About" className="nav_Items nav_Items-hover">About</p>
             </NavLink>
             </div>

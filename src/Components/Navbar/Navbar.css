@@ -44,3 +44,7 @@
 .nav_Items-hover:hover::before {
     max-width: 100%;
 }
+
+.selected {
+    display: none;
+}
