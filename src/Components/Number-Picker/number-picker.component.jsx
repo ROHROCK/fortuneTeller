@@ -14,6 +14,7 @@ class NumberPicker extends Component {
     }
     // eslint-disable-next-line
     let pickRandomFortune = this.pickRandomFortune.bind(this);
+    // eslint-disable-next-line
     let selectedNumber = this.selectedNumber.bind(this);
   }
   // Logic to pick parse random fortune when color is picked
@@ -50,9 +51,6 @@ class NumberPicker extends Component {
           flexDirection: "column",
         }}
       >
-<<<<<<< HEAD
-          <h1 style={{color:'white'}}>{this.state.fortuneText}</h1>
-=======
         <div
           id="number-div"
           style={{
@@ -62,7 +60,6 @@ class NumberPicker extends Component {
             fontSize: "40px",
           }}
         >
->>>>>>> e7f696ccec483e88def2aaa95a31ae8f6e8dfe40
           <div
             id="col1"
             style={{
@@ -78,38 +75,12 @@ class NumberPicker extends Component {
                 width: "30vh",
                 margin: "5px",
               }}
-<<<<<<< HEAD
-            >
-              <div
-                id="number1"
-                style={{
-                  border: "2px solid #7400B8",
-                  height: "30vh",
-                  width: "30vh",
-                  margin: "5px",
-                }}
-                onSubmit={this.setFortune(0)}>
-                <h1>{(this.state.numberIndex === undefined)?"Wait":this.state.numberIndex[0]}</h1>
-              </div>
-              <div
-                id="number2"
-                style={{
-                  border: "2px solid #7400B8",
-                  height: "30vh",
-                  width: "30vh",
-                  margin: "5px",
-                }}
-                >
-                <h1>{(this.state.numberIndex === undefined)?"Wait":this.state.numberIndex[1]}</h1>
-              </div>
-=======
               onClick={() => this.selectedNumber(this.state.numberIndex[0])}>
               <Link to={{
                 pathname: "/fortuneteller",
                 state: { selected: this.state.selected, fortune: this.state.fortune },
               }}> <h1>{(this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[0]}</h1>
               </Link>
->>>>>>> e7f696ccec483e88def2aaa95a31ae8f6e8dfe40
             </div>
             <div
               id="number2"
