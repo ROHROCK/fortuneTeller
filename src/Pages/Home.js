@@ -6,15 +6,8 @@ import { ReactComponent as Table } from "../Assets/Icons/table.svg";
 import { ReactComponent as Hand } from "../Assets/Icons/hand.svg";
 import { ReactComponent as Flower } from "../Assets/Icons/flower.svg";
 import { ReactComponent as ChevronRight } from "../Assets/Icons/chevron-right.svg";
-import { bounce } from "react-animations";
-import Radium, { StyleRoot } from "radium";
 
-const styles = {
-  bounce: {
-    animation: "x 2s",
-    animationName: Radium.keyframes(bounce, "fadeIn"),
-  },
-};
+import {Animated} from "react-animated-css";
 
 function Home() {
   return (
@@ -39,7 +32,9 @@ function Home() {
               alignSelf: "center",
             }}
           >
-            <Flower height="35vh" width="20vh" />
+            <Animated animationIn="fadeInLeftBig" isVisible={true}>
+              <Flower height="35vh" width="20vh" />
+            </Animated> 
           </div>
         </div>
       </div>
@@ -72,15 +67,15 @@ function Home() {
               paddingBottom: "15vh",
             }}
           >
-            <Link to="/box">
-            <StyleRoot>
-              <button className="Fortune_button" style={styles.bounce}>
-                Check My fortune
-                <ChevronRight className="Hello" />
-              </button>
-              </StyleRoot>
-            </Link>
             
+            <Animated animationIn="fadeIn" isVisible={true}>
+              <Link to="/box">
+                <button className="Fortune_button animate__animated animate__bounce animate__delay-2s">
+                  Check My fortune
+                  <ChevronRight className="Hello" />
+                </button>
+              </Link>
+            </Animated>
           </div>
           
 
@@ -91,7 +86,9 @@ function Home() {
               justifySelf: "flex-end",
             }}
           >
-            <Table width="40vh" height="40vh" />
+            <Animated animationIn="slideInUp" isVisible={true}>
+             <Table width="40vh" height="40vh" />
+            </Animated>  
           </div>
         </div>
       </div>
@@ -119,7 +116,9 @@ function Home() {
               paddingBottom: "20vh",
             }}
           >
-            <Hand width="15vh" height="30vh" />
+            <Animated animationIn="fadeInRightBig" isVisible={true}>
+              <Hand width="15vh" height="30vh" />
+            </Animated>
           </div>
         </div>
       </div>

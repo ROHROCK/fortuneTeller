@@ -2,9 +2,11 @@ import React from 'react';
 import './Navbar.css';
 import { Link, NavLink } from "react-router-dom";
 import {ReactComponent as Logo} from "../../Assets/Icons/logo.svg";
+import {Animated} from "react-animated-css";
 
 function navbar() {
     return (
+        <Animated animationIn="fadeIn" isVisible={true}>
         <nav className="nav_Container">
             <div className="nav_Left">
                 <Link to="/">
@@ -20,6 +22,7 @@ function navbar() {
             </NavLink>
             </div>
         </nav>
+        </Animated>
     )
 }
 
