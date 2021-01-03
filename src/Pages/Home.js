@@ -66,8 +66,7 @@ function Home() {
             <Link to="/box">
               <button className="Fortune_button">
                 Check My fortune
-                {/* <img alt="see our project" src="https://sebostudio.com/wp-content/themes/sebotheme-3.0.0/assets/img/chevron-right.svg"/> */}
-                <ChevronRight/>
+                <ChevronRight className="Hello"/>
               </button>
             </Link>
           </div>
