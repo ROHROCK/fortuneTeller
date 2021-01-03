@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './fortune-teller.css'
 import { Button, Modal } from "react-bootstrap";
 import { Link } from 'react-router-dom';
+import ShareComponent from '../Share/share.component';
 
 class FortuneTeller extends Component {
 
@@ -12,8 +13,8 @@ class FortuneTeller extends Component {
             modalIsOpen: false,
             message: 'This is your fortune of the day: '
         }
-        // const openModal = this.openModal.bind(this);
-        // const closeModal = this.closeModal.bind(this);
+         const openModal = this.openModal.bind(this);
+         const closeModal = this.closeModal.bind(this);
     }
     componentDidMount() {
         this.openModal();
@@ -34,14 +35,14 @@ class FortuneTeller extends Component {
     render() {
         return (
             <div>
-                <Modal style={{ marginTop: '50%' }} show={this.state.modalIsOpen} onHide={this.closeModal} animation={false}>
-                    <Modal.Header closeButton>
-                        <Modal.Title>Fortune Teller</Modal.Title>
+                <Modal style={{ marginTop: "200px", borderRadius: '50px 50px'}} show={this.state.modalIsOpen} onHide={this.closeModal} animation={false}>
+                    <Modal.Header style={{backgroundColor: "#FFE031" }} closeButton>
                     </Modal.Header>
-                    <Modal.Body>{this.state.message + this.props.location.state.fortune}</Modal.Body>
-                    <Modal.Footer>
+                    <Modal.Body style={{backgroundColor: "#FFE031" }} >{this.state.message + this.props.location.state.fortune}</Modal.Body>
+                    <Modal.Footer style={{backgroundColor: "#FFE031" }} >
+                    <ShareComponent fortuneMessage={this.props.location.state.fortune}/>
                         <Link to={{ pathname: '/' }}>
-                            <Button variant="secondary" onClick={this.closeModal}>
+                            <Button className="btn btn-transparent" style={{color:"#F830CF", border: "2px solid #F830CF", padding: "5px 40px",borderRadius:"40px"}} variant="Light" onClick={this.closeModal}>
                                 Restart
                         </Button>
                         </Link>
