@@ -14,6 +14,7 @@ class NumberPicker extends Component {
     }
     // eslint-disable-next-line
     let pickRandomFortune = this.pickRandomFortune.bind(this);
+    // eslint-disable-next-line
     let selectedNumber = this.selectedNumber.bind(this);
   }
   // Logic to pick parse random fortune when color is picked
