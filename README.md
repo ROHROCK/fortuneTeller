@@ -57,7 +57,7 @@ Contributions are what make the open source community such an amazing place to b
 
 ## Contact
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/ROHROCK/newyearnewhack)
+Project Link: https://github.com/ROHROCK/newyearnewhack
 
 Rohit Agharkar - rohitsa40@gmail.com
 
