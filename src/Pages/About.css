@@ -128,3 +128,13 @@ transition: width 0.4s;
     font-size: x-large;
 }
 
+.About_stack {
+  display: flex;
+  padding: 0px 0px 50px 0px;
+}
+
+.center .About_stack img {
+  padding: 0px 20px;
+  width: 100px;
+  object-fit: contain;
+}
