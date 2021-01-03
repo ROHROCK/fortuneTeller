@@ -1,4 +1,4 @@
-# Origami Fortune Teller
+# Origami Fortune Teller <img src="https://img.icons8.com/cotton/64/000000/crystal-ball.png"/>
 ![Capture7](https://user-images.githubusercontent.com/36737476/103480738-10917e80-4dfc-11eb-8881-83861af17d6e.PNG)
 
 # Introduction
