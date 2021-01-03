@@ -6,10 +6,12 @@ class NumberPicker extends Component {
   constructor(){
     super();
     this.state = {
-      prevColorSelected:""
+      prevColorSelected:"",
+      fortuneText:""
     }
     // eslint-disable-next-line
-    let pickRandomFortune = this.pickRandomFortune.bind(this);
+    var pickRandomFortune = this.pickRandomFortune.bind(this);
+    var setFortune = this.setFortune.bind(this);
   }
   // Logic to pick parse random fortune when color is picked
   pickRandomFortune = () =>{
@@ -24,7 +26,17 @@ class NumberPicker extends Component {
       fortuneSelected.push(fortuneJSON.fortunes[index]);
     this.setState({fortune:fortuneSelected,numberIndex:parseIndex,prevColorSelected:this.props.location.state.colorSelected});
     });
-    // console.log("The fortunes are: ",fortuneSelected);
+    console.log("The fortunes are: ",fortuneSelected);
+  }
+  
+  setFortune = (index) =>{
+    if(this.state.numberIndex !== undefined){
+      console.log(this.state.numberIndex[index]);
+      if(this.state.fortuneText !== ""){
+        this.setState({fortuneText:fortuneJSON.fortunes[this.state.numberIndex[index]]})
+      }
+      
+    }
   }
 
   render() {
@@ -44,6 +56,7 @@ class NumberPicker extends Component {
           flexDirection: "column",
         }}
       >
+          <h1 style={{color:'white'}}>{this.state.fortuneText}</h1>
           <div
             id="number-div"
             style={{
@@ -68,7 +81,7 @@ class NumberPicker extends Component {
                   width: "30vh",
                   margin: "5px",
                 }}
-                >
+                onSubmit={this.setFortune(0)}>
                 <h1>{(this.state.numberIndex === undefined)?"Wait":this.state.numberIndex[0]}</h1>
               </div>
               <div
