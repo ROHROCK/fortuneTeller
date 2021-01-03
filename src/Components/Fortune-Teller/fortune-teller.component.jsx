@@ -35,14 +35,8 @@ class FortuneTeller extends Component {
     render() {
         return (
             <div>
-<<<<<<< HEAD
                 <Modal style={{ marginTop: "200px", borderRadius: '50px 50px'}} show={this.state.modalIsOpen} onHide={this.closeModal} animation={false}>
                     <Modal.Header style={{backgroundColor: "#FFE031" }} closeButton>
-=======
-                <Modal show={this.state.modalIsOpen} onHide={this.closeModal} animation={false}>
-                    <Modal.Header closeButton>
-                        <Modal.Title>Fortune Teller</Modal.Title>
->>>>>>> b7ef82beb82e30282d0981c0660e78078d84654a
                     </Modal.Header>
                     <Modal.Body style={{backgroundColor: "#FFE031" }} >{this.state.message + this.props.location.state.fortune}</Modal.Body>
                     <Modal.Footer style={{backgroundColor: "#FFE031" }} >
