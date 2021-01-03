@@ -64,7 +64,7 @@ function Home() {
             }}
           >
             <Link to="/box">
-              <button className="Fortune_button">
+              <button className="Fortune_button" style={{height:'20vh'}}>
                 Check My fortune
                 <ChevronRight className="Hello"/>
               </button>

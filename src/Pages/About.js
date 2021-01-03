@@ -4,6 +4,7 @@ import FirebaseLogo from '../Assets/Icons/techicons/firebase.svg';
 import NpmLogo from '../Assets/Icons/techicons/npm.svg';
 import CssLogo from '../Assets/Icons/techicons/css.svg';
 import HtmlLogo from '../Assets/Icons/techicons/html.svg';
+import Creator from "../Components/Creator/creator";
 
 function About() {
     return (
@@ -39,6 +40,7 @@ function About() {
                         <div >
                             <h1>Meet the Creators !</h1>
                         </div>
+                        <Creator />
                     </div>
                 </div>
             </div>
