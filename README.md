@@ -36,7 +36,9 @@ This project is inspired by MLH #NewYearNewHack hackathon. Everyone is keen to k
    ```sh
    npm install
    ```
-   
+# Screenshots
+
+![s1](https://user-images.githubusercontent.com/36737476/103481702-b8aa4600-4e02-11eb-847b-62a4772ca699.PNG)
    
 <!-- ROADMAP -->
 ## Roadmap
@@ -65,7 +67,7 @@ Vikrant Shitole - vikrantshitole98@gmail.com
 
 Kausar Sayyed - Kausarsyyed.20@gmail.com
 
-# Screenshots
+
 
 
 
