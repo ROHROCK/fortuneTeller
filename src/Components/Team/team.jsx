@@ -21,9 +21,12 @@ var info = [
     prof: "Full Stack Developer"
   },
   {
-    name: "Kausar Sayeed",
-    desc: "I am a full stack engineer and a SQA Engineer by Profession",
+    name: "Kausar Sayyed",
+    desc: "I am front end developer and currently working as software tester in Amdocs ",
     profilePath: KausarImage,
+    website: "https://www.linkedin.com/in/kausar-sayyed07/",
+    websitetype: "LinkedIn",
+    prof: "Front End Developer"
   },
   {
     name: "Vikrant Shitole",
