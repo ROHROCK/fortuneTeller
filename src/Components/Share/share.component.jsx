@@ -19,42 +19,42 @@ class ShareComponent extends Component {
 
     render() {
         return (
-            <div >
+            <div className="share_icons">
                 <FacebookShareButton
-                    style={{ padding: '0 3px' }}
+                    style={{ padding: '0 10px' }}
                     url={this.state.url}
                     quote={this.state.message + this.props.fortuneMessage}
                     hashtag={this.state.hashtag}>
-                    <FacebookIcon iconFillColor="white" size="50px" round={true} />
+                    <FacebookIcon iconFillColor="white" size="40px" round={true} />
                 </FacebookShareButton>
                 <TwitterShareButton
-                    style={{ padding: '0 3px' }}
+                    style={{ padding: '0 10px' }}
                     url={this.state.url}
                     title={this.state.message + this.props.fortuneMessage}
                     hashtag={this.state.hashtag}>
-                    <TwitterIcon iconFillColor="white" size="50px" round={true} />
+                    <TwitterIcon iconFillColor="white" size="40px" round={true} />
                 </TwitterShareButton>
                 <WhatsappShareButton
-                    style={{ padding: '0 3px' }}
+                    style={{ padding: '0 10px' }}
                     url={this.state.url}
                     title={this.state.message + this.props.fortuneMessage}
                 >
-                    <WhatsappIcon size="50px" round={true} />
+                    <WhatsappIcon size="40px" round={true} />
                 </WhatsappShareButton>
                 <EmailShareButton
-                    style={{ padding: '0 3px' }}
+                    style={{ padding: '0 10px' }}
                     subject={this.state.subject}
                     body={this.state.message + this.props.fortuneMessage + this.state.url}
                 >
-                    <EmailIcon size="50px" round={true} />
+                    <EmailIcon size="40px" round={true} />
                 </EmailShareButton>
                 <LinkedinShareButton
-                    style={{ padding: '0 3px' }} 
+                    style={{ padding: '0 10px' }} 
                     title={this.state.title}
                     summary={this.state.message + this.props.fortuneMessage}
                     source={this.state.url}
                 >
-                    <LinkedinIcon size="50px" round={true} />
+                    <LinkedinIcon size="40px" round={true} />
                 </LinkedinShareButton>
 
             </div>

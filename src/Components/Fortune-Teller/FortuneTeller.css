@@ -1,0 +1,84 @@
+span {
+  display: inline-block;
+}
+
+.tarot {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.tarot-card {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  transition: transform 1s cubic-bezier(0.5, 0.59, 0.44, 1.11);
+  width: 100%;
+}
+.tarot-card-wrap {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  perspective: 1200px;
+}
+.tarot-card-wrap:hover .tarot-card.front, .tarot-card-wrap:focus .tarot-card.front, .tarot-card-wrap:active .tarot-card.front {
+  transform: rotateY(180deg);
+}
+.tarot-card-wrap:hover .tarot-card.front ~ .back, .tarot-card-wrap:focus .tarot-card.front ~ .back, .tarot-card-wrap:active .tarot-card.front ~ .back {
+  transform: rotateY(0deg);
+}
+.tarot-card.front {
+  height: 100%;
+  width: 100%;
+}
+
+.tarot-card.back {
+  background: #4b384c;
+  background: radial-gradient(ellipse at center, #684e69 0%, #4b384c 100%);
+  border: 8px solid rgba(255, 255, 255, 0.9);
+  transform: rotateY(-180deg);
+  z-index: 1;
+  padding: 10px;
+}
+
+.Message_header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 10px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: color 2s ease;
+}
+
+.Message_Body {
+  position: relative;
+  top: 50;
+  left: 0;
+  right: 0;
+  padding: 8px 10px;
+  color: #ffe031;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: color 5s ease;
+}
+
+.share {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.restart_button {
+  margin-top: 30px;
+}
