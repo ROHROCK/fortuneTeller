@@ -66,22 +66,22 @@ class NumberPicker extends Component {
               display: "flex",
               alignSelf: "center",
             }}
-          >
-            <div
-              id="number1"
-              style={{
-                border: "2px solid #7400B8",
-                height: "30vh",
-                width: "30vh",
-                margin: "5px",
-              }}
-              onClick={() => this.selectedNumber(this.state.numberIndex[0])}>
-              <Link to={{
-                pathname: "/fortuneteller",
-                state: { selected: this.state.selected, fortune: this.state.fortune },
-              }}> <h1>{(this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[0]}</h1>
-              </Link>
-            </div>
+          ><Link to={{
+            pathname: "/fortuneteller",
+            state: { selected: (this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[0], fortune: this.state.fortune },
+          }}>
+              <div
+                id="number1"
+                style={{
+                  border: "2px solid #7400B8",
+                  height: "30vh",
+                  width: "30vh",
+                  margin: "5px",
+                }}
+                onClick={() => this.selectedNumber(this.state.numberIndex[0])}>
+                <h1>{(this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[0]}</h1>
+              </div>
+            </Link>
             <div
               id="number2"
               style={{

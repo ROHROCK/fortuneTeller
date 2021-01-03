@@ -3,6 +3,7 @@ import './fortune-teller.css'
 import { Button, Modal } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import ShareComponent from '../Share/share.component';
+import fortuneJSON from "../../Assets/Icons/data/fortunes.json";
 
 class FortuneTeller extends Component {
 
@@ -11,14 +12,18 @@ class FortuneTeller extends Component {
         super();
         this.state = {
             modalIsOpen: false,
-            message: 'This is your fortune of the day: '
+            message: 'This is your fortune of the day: ',
+            fortune: '',
         }
         // eslint-disable-next-line
-         const openModal = this.openModal.bind(this);
+        const openModal = this.openModal.bind(this);
         // eslint-disable-next-line
-         const closeModal = this.closeModal.bind(this);
+        const closeModal = this.closeModal.bind(this);
     }
-    componentDidMount() {
+    async componentDidMount() {
+        console.log(this.props);
+        await this.setState({ fortune: fortuneJSON.fortunes[this.props.location.state.selected] })
+        console.log(this.state.fortune);
         this.openModal();
     }
     openModal = () => {
@@ -32,19 +37,20 @@ class FortuneTeller extends Component {
 
     closeModal = () => {
         this.setState({ modalIsOpen: false })
+        this.props.history.push('/');
     }
 
     render() {
         return (
             <div>
-                <Modal style={{ marginTop: "200px", borderRadius: '50px 50px'}} show={this.state.modalIsOpen} onHide={this.closeModal} animation={false}>
-                    <Modal.Header style={{backgroundColor: "#FFE031" }} closeButton>
+                <Modal style={{ marginTop: "200px", borderRadius: '50px 50px' }} show={this.state.modalIsOpen} onHide={this.closeModal} animation={false}>
+                    <Modal.Header style={{ backgroundColor: "#FFE031" }} closeButton>
                     </Modal.Header>
-                    <Modal.Body style={{backgroundColor: "#FFE031" }} >{this.state.message + this.props.location.state.fortune}</Modal.Body>
-                    <Modal.Footer style={{backgroundColor: "#FFE031" }} >
-                    <ShareComponent fortuneMessage={this.props.location.state.fortune}/>
+                    <Modal.Body style={{ backgroundColor: "#FFE031" }} >{this.state.message + this.state.fortune}</Modal.Body>
+                    <Modal.Footer style={{ backgroundColor: "#FFE031" }} >
+                        <ShareComponent fortuneMessage={this.state.fortune} />
                         <Link to={{ pathname: '/' }}>
-                            <Button className="btn btn-transparent" style={{color:"#F830CF", border: "2px solid #F830CF", padding: "5px 40px",borderRadius:"40px"}} variant="Light" onClick={this.closeModal}>
+                            <Button className="btn btn-transparent" style={{ color: "#F830CF", border: "2px solid #F830CF", padding: "5px 40px", borderRadius: "40px" }} variant="Light" onClick={this.closeModal}>
                                 Restart
                         </Button>
                         </Link>
