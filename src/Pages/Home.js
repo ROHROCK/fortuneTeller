@@ -1,20 +1,17 @@
 import React from "react";
-import Table from "../Assets/Icons/table.svg";
-import Hand from "../Assets/Icons/hand.svg";
-// import Flower from "../Assets/Icons/flower.svg";
 import { Link } from "react-router-dom";
-import Candle from "../Assets/Icons/candle.svg";
+import './Home.css';
+
+import {ReactComponent as Table} from "../Assets/Icons/table.svg";
+import {ReactComponent as Hand} from "../Assets/Icons/hand.svg";
+import {ReactComponent as Flower} from "../Assets/Icons/flower.svg";
+import {ReactComponent as ChevronRight} from "../Assets/Icons/chevron-right.svg";
+
 
 function Home() {
   return (
-    <div
-      style={{
-        display: "flex",
-        margin: "20px",
-      }}
-    >
+    <div className="home_Container">
       <div
-        id="child1"
         style={{
           display: "flex",
           height: "90vh",
@@ -22,7 +19,6 @@ function Home() {
         }}
       >
         <div
-          id="box-div"
           style={{
             display: "flex",
             flex: "1 1 0px",
@@ -35,15 +31,7 @@ function Home() {
               alignSelf: "center",
             }}
           >
-            <img
-              src={Hand}
-              style={{
-                width: "10vh",
-                align: "flex-end",
-                height: "30vh",
-              }}
-              alt="Flower"
-            />
+            <Flower height="35vh" width= "20vh"/>
           </div>
         </div>
       </div>
@@ -76,7 +64,11 @@ function Home() {
             }}
           >
             <Link to="/box">
-              <h1>Click Here to check fortune</h1>
+              <button className="Fortune_button">
+                Check My fortune
+                {/* <img alt="see our project" src="https://sebostudio.com/wp-content/themes/sebotheme-3.0.0/assets/img/chevron-right.svg"/> */}
+                <ChevronRight/>
+              </button>
             </Link>
           </div>
 
@@ -87,23 +79,7 @@ function Home() {
               justifySelf: "flex-end",
             }}
           >
-            <img
-              src={Table}
-              style={{
-                width: "40vh",
-                height: "40vh",
-              }}
-              alt="Table"
-            />
-            <img
-              src={Candle}
-              style={{
-                width: "10vh",
-                height: "20vh",
-                paddingBottom: "20px",
-              }}
-              alt="Table"
-            />
+            <Table width= "40vh" height= "40vh"/>
           </div>
         </div>
       </div>
@@ -130,15 +106,7 @@ function Home() {
               alignSelf: "center",
             }}
           >
-            <img
-              src={Hand}
-              style={{
-                width: "15vh",
-                align: "flex-end",
-                height: "30vh",
-              }}
-              alt="Flower"
-            />
+            <Hand  width="15vh" height="30vh"/>
           </div>
         </div>
       </div>

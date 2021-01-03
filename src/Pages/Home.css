@@ -1,0 +1,48 @@
+.home_Container {
+    display: flex;
+    overflow: hidden;
+}
+
+.Fortune_button {
+    position: relative;
+    background: #f830cf;
+    text-transform: initial;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    border-radius: 10px;
+    box-shadow: none;
+    width: 270px;
+    padding: 19px 30px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+    font-weight: bold;
+    color: #fff;
+    border: solid 2px #ffffff;
+    border-color: transparent;
+    height: auto;
+}
+
+.Fortune_button:hover {
+    background: #3A219e;
+}
+
+.Fortune_button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: solid 1px #ffe031;
+    border-radius: 10px;
+    z-index: -1;
+    top: 10px;
+    left: 10px;
+}
+
+.home_Container .Fortune_button img {
+    position: relative;
+    animation: cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 1s ease-in-out;
+}
