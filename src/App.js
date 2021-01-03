@@ -1,9 +1,8 @@
-import "./App.css";
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Loading from "./Components/Loader/Loader";
 import NumberPicker from "./Components/Number-Picker/number-picker.component";
-import NavbarComponent from "./Components/Navbar/navbar.component";
+import Navbar from "./Components/Navbar/Navbar";
 import FortuneTeller from "./Components/Fortune-Teller/fortune-teller.component";
 import Box from "./Components/Boxes/box.component";
 
@@ -14,8 +13,8 @@ const NotFound = lazy(() => import("./Pages/About"));
 function App() {
   return (
     <div className="App">
-      <NavbarComponent />
       <BrowserRouter>
+        <Navbar />
         <Routes />
       </BrowserRouter>
     </div>
