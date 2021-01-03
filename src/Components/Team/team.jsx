@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import RohitImage from "../../Assets/Icons/Team/Rohit.jpeg";
-// import KausarImage from "";
+import KausarImage from "../../Assets/Icons/Team/Kausar.jpeg";
 // import VikrantImage form "";
-// import RiteshImage from "";
 
 var info = [
   {
-    name: "Rohit",
-    desc: "I am a full stack engineer and a SQA Engineer by Profession",
+    name: "Rohit Agharkar",
+    desc: "Love to build things, intrested in Cloud Computing Enthusiast",
     profilePath: RohitImage,
+    website: "https://www.linkedin.com/in/rohit-agharkar-15793a127/",
+    websitetype: "LinkedIn",
+    prof: "Full stack Developer"
   },
   {
     name: "Ritesh Bucha",
@@ -19,9 +21,9 @@ var info = [
     prof: "Full Stack Developer"
   },
   {
-    name: "Rohit",
+    name: "Kausar Sayeed",
     desc: "I am a full stack engineer and a SQA Engineer by Profession",
-    profilePath: RohitImage,
+    profilePath: KausarImage,
   },
   {
     name: "Rohit",
