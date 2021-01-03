@@ -108,4 +108,12 @@ transition: width 0.4s;
   font-size: 0.9em;
 }
 
+.About_header {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 50px;
+    font-size: x-large;
+}
 
