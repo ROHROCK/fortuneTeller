@@ -33,7 +33,6 @@ class NumberPicker extends Component {
   }
   async selectedNumber(number) {
     await this.setState({ selected: number });
-    await this.setState({ fortune: fortuneJSON.fortunes[number] })
   }
   render() {
     if (this.props.location.state.colorSelected !== this.state.prevColorSelected) {
@@ -66,10 +65,11 @@ class NumberPicker extends Component {
               display: "flex",
               alignSelf: "center",
             }}
-          ><Link to={{
-            pathname: "/fortuneteller",
-            state: { selected: (this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[0], fortune: this.state.fortune },
-          }}>
+          >
+            <Link to={{
+              pathname: "/fortuneteller",
+              state: { selected: (this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[0], fortune: this.state.fortune },
+            }}>
               <div
                 id="number1"
                 style={{
@@ -82,22 +82,23 @@ class NumberPicker extends Component {
                 <h1>{(this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[0]}</h1>
               </div>
             </Link>
-            <div
-              id="number2"
-              style={{
-                border: "2px solid #7400B8",
-                height: "30vh",
-                width: "30vh",
-                margin: "5px",
-              }}
-              onClick={() => this.selectedNumber(this.state.numberIndex[1])}>
-              <Link to={{
-                pathname: "/fortuneteller",
-                state: { selected: this.state.selected, fortune: this.state.fortune },
-              }}>
+            <Link to={{
+              pathname: "/fortuneteller",
+              state: { selected: (this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[1], fortune: this.state.fortune },
+            }}>
+              <div
+                id="number2"
+                style={{
+                  border: "2px solid #7400B8",
+                  height: "30vh",
+                  width: "30vh",
+                  margin: "5px",
+                }}
+                onClick={() => this.selectedNumber(this.state.numberIndex[1])}>
                 <h1>{(this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[1]}</h1>
-              </Link>
-            </div>
+              </div>
+
+            </Link>
           </div>
           <div
             id="col2"
@@ -106,39 +107,44 @@ class NumberPicker extends Component {
               alignSelf: "center",
             }}
           >
-            <div
-              id="number3"
-              style={{
-                border: "2px solid #7400B8",
-                height: "30vh",
-                width: "30vh",
-                margin: "5px",
-              }}
-              onClick={() => this.selectedNumber(this.state.numberIndex[2])}
-            >
-              <Link to={{
-                pathname: "/fortuneteller",
-                state: { selected: this.state.selected, fortune: this.state.fortune },
-              }}>
+            <Link to={{
+              pathname: "/fortuneteller",
+              state: { selected: (this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[2], fortune: this.state.fortune },
+            }}>
+
+              <div
+                id="number3"
+                style={{
+                  border: "2px solid #7400B8",
+                  height: "30vh",
+                  width: "30vh",
+                  margin: "5px",
+                }}
+                onClick={() => this.selectedNumber(this.state.numberIndex[2])}
+              >
                 <h1>{(this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[2]}</h1>
-              </Link>
-            </div>
-            <div
-              id="number4"
-              style={{
-                border: "2px solid #7400B8",
-                height: "30vh",
-                width: "30vh",
-                margin: "5px",
-              }}
-              onClick={() => this.selectedNumber(this.state.numberIndex[3])}>
-              <Link to={{
-                pathname: "/fortuneteller",
-                state: { selected: this.state.selected, fortune: this.state.fortune },
-              }}>
+              </div>
+
+            </Link>
+            <Link to={{
+              pathname: "/fortuneteller",
+              state: { selected: (this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[2], fortune: this.state.fortune },
+            }}>
+
+              <div
+                id="number4"
+                style={{
+                  border: "2px solid #7400B8",
+                  height: "30vh",
+                  width: "30vh",
+                  margin: "5px",
+                }}
+                onClick={() => this.selectedNumber(this.state.numberIndex[3])}>
+
                 <h1>{(this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[3]}</h1>
-              </Link>
-            </div>
+              </div>
+
+            </Link>
           </div>
         </div>
         <div
