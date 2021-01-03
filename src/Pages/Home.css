@@ -47,3 +47,9 @@
     -webkit-animation: linear infinite alternate;
     transition: all 0.3s ease-in-out;
 }
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+  }

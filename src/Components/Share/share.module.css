@@ -1,3 +1,8 @@
 .share{
     background-color: black;
 }
+
+.share_icons {
+    display: flex;
+    width: 100px;
+}

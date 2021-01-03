@@ -28,7 +28,7 @@
     position: relative;
   }
 
-  .nav_Items-hover::before {
+.nav_Items-hover::before {
     position: absolute;
     top: 0;
     left: 0;
