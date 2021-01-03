@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import RohitImage from "../../Assets/Icons/Team/Rohit.jpeg";
 import KausarImage from "../../Assets/Icons/Team/Kausar.jpeg";
-// import VikrantImage form "";
+import VikrantImage from "../../Assets/Icons/Team/vikrant.jpeg";
 
 var info = [
   {
@@ -26,9 +26,12 @@ var info = [
     profilePath: KausarImage,
   },
   {
-    name: "Rohit",
-    desc: "I am a full stack engineer and a SQA Engineer by Profession",
-    profilePath: RohitImage,
+    name: "Vikrant Shitole",
+    desc: "I am a full stack engineer and a Software Developer by Profession. I have 1 year of experience in software development in Angular and ionic.",
+    profilePath: VikrantImage,
+    website: "https://www.linkedin.com/in/vikrant-shitole-081092183",
+    websitetype: "LinkedIn",
+    prof: "Full stack Developer"
   },
 ];
 
