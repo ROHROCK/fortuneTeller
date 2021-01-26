@@ -1,0 +1,35 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: fortune-docker-k8s
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fortune-docker-k8s
+  template:
+    metadata:
+      labels:
+        app: fortune-docker-k8s
+    spec:
+      containers:
+        - name: fortune-docker-k8s
+          image: rohitsa/fortune-docker-k8s
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+      restartPolicy: Always
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: fortune-docker-k8s
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+      nodePort: 30000
+  selector:
+    app: fortune-docker-k8s
