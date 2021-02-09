@@ -1,42 +1,42 @@
 .box1{
     background-color:green;
-    border-radius: 10px;
+    border-radius: 10%;
     color:"#fff";
-    height:200px;
-    width:200px;
+    height:20vh;
+    width:20vw;
     margin: 5px;
 }
 
 .box2{
     background-color:red;
-    border-radius: 10px;
+    border-radius: 10%;
     color:"#fff";
-    height:200px;
-    width:200px;
+    height:20vh;
+    width:20vw;
     margin: 5px;
 }
 
 .box3{
     background-color:blue;
-    border-radius: 10px;
+    border-radius: 10%;
     color:"#fff";
-    height:200px;
-    width:200px;
+    height:20vh;
+    width:20vw;
     margin: 5px;
 }
 
 .box4{
     background-color:yellow;
-    border-radius: 10px;
+    border-radius: 10%;
     color:"#fff";
-    height:200px;
-    width:200px;
+    height:20vh;
+    width:20vw;
     margin: 5px;
 }
 
 @media screen and (max-width: 800px) {
     .box1, .box2, .box3, .box4{
-      width: 20vh; /* The width is 100%, when the viewport is 800px or smaller */
+      width: 20vw; /* The width is 100%, when the viewport is 800px or smaller */
       height: 20vh;
         
     }

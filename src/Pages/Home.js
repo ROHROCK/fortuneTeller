@@ -22,7 +22,7 @@ function Home() {
         <div
           style={{
             display: "flex",
-            flex: "1 1 0px",
+            flex: "1 1 0",
             flexDirection: "column",
             justifyContent: "flex-end",
           }}
@@ -33,7 +33,7 @@ function Home() {
             }}
           >
             <Animated animationIn="fadeInLeftBig" isVisible={true}>
-              <Flower height="35vh" width="20vh" />
+              <Flower height="35vh" width="20vw" />
             </Animated> 
           </div>
         </div>
@@ -52,7 +52,7 @@ function Home() {
           style={{
             display: "flex",
             height: "90vh",
-            flex: "1 1 0px",
+            flex: "1 1 0",
             flexDirection: "column",
             flexWrap: "wrap",
             justifyContent: "flex-end",
@@ -87,7 +87,7 @@ function Home() {
             }}
           >
             <Animated animationIn="slideInUp" isVisible={true}>
-             <Table width="40vh" height="40vh" />
+             <Table width="40vw" height="40vh" />
             </Animated>  
           </div>
         </div>
@@ -105,7 +105,7 @@ function Home() {
           id="box-div"
           style={{
             display: "flex",
-            flex: "1 1 0px",
+            flex: "1 1 0",
             flexDirection: "column",
             justifyContent: "center",
           }}
@@ -117,7 +117,7 @@ function Home() {
             }}
           >
             <Animated animationIn="fadeInRightBig" isVisible={true}>
-              <Hand width="15vh" height="30vh" />
+              <Hand width="15vw" height="30vh" />
             </Animated>
           </div>
         </div>

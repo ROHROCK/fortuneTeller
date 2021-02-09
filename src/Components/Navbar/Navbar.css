@@ -7,16 +7,16 @@
 }
 
 .nav_Left {
-    padding: 20px 40px;
+    padding: 2% 2%;
 }
 
 .nav_Right {
-    padding: 20px 60px;
+    padding: 2% 2%;
     display: flex;
 }
 
 .nav_Items {
-    margin-left: 40px;
+    margin-left: 10%;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     -webkit-text-stroke-color: #ffffff;

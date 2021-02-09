@@ -15,7 +15,8 @@ This project is inspired by MLH #NewYearNewHack hackathon. Everyone is keen to k
 <img align="left" alt="CSS3" width="40px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
 <img align="left" alt="npm" width="40px" src="https://img.icons8.com/color/48/000000/npm.png" />
 <img align="left" alt="firebase" width="40px" src="https://img.icons8.com/color/48/000000/google-firebase-console.png" />
-
+<img align="left" alt="docker" width="40px" src="https://img.icons8.com/color/64/000000/docker.png" />
+<img align="left" alt="kubernetes" width="40px" src="https://img.icons8.com/color/48/000000/kubernetes.png" />
 
 
 

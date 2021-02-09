@@ -7,11 +7,11 @@
     position: relative;
     background: #f830cf;
     text-transform: initial;
-    font-size: 18px;
+    font-size: 2vw;
     letter-spacing: 0.4px;
     border-radius: 10px;
     box-shadow: none;
-    width: 270px;
+    width: 20vw;
     padding: 19px 30px;
     text-align: left;
     transition: all 0.3s ease-in-out;
