@@ -1,6 +1,9 @@
 import React from "react";
 import "./About.css";
 import Team from '../Components/Team/team';
+import dockerImage from '../Assets/Icons/techicons/docker.svg'
+import k8sImage from '../Assets/Icons/techicons/kubernetes.svg'
+
 
 function About() {
   return (
@@ -12,6 +15,8 @@ function About() {
          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" alt="React"/>
          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/363px-CSS3_logo_and_wordmark.svg.png" alt="Css"/>
          <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Html5"/>
+         <img src={dockerImage} alt="DockerImage"/>
+         <img src={k8sImage} alt="k8sImage"/>
       </div>
       <h1 className="About_header">Our Team</h1>
       <Team />
