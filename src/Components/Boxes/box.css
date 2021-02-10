@@ -2,8 +2,8 @@
     background-color:green;
     border-radius: 10%;
     color:"#fff";
-    height:20vh;
-    width:20vw;
+    height:10vw;
+    width:10vw;
     margin: 5px;
 }
 
@@ -11,8 +11,8 @@
     background-color:red;
     border-radius: 10%;
     color:"#fff";
-    height:20vh;
-    width:20vw;
+    height:10vw;
+    width:10vw;
     margin: 5px;
 }
 
@@ -20,8 +20,8 @@
     background-color:blue;
     border-radius: 10%;
     color:"#fff";
-    height:20vh;
-    width:20vw;
+    height:10vw;
+    width:10vw;
     margin: 5px;
 }
 
@@ -29,15 +29,16 @@
     background-color:yellow;
     border-radius: 10%;
     color:"#fff";
-    height:20vh;
-    width:20vw;
+    height:10vw;
+    width:10vw;
     margin: 5px;
 }
 
+ 
 @media screen and (max-width: 800px) {
     .box1, .box2, .box3, .box4{
       width: 20vw; /* The width is 100%, when the viewport is 800px or smaller */
-      height: 20vh;
+      height: 20vw;
         
     }
     .text-color, h1 {
@@ -45,4 +46,3 @@
     }
 
   }
- 

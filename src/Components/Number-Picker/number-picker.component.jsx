@@ -71,11 +71,11 @@ class NumberPicker extends Component {
               state: { selected: (this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[0], fortune: this.state.fortune },
             }}>
               <div
-                id="number1"
+                className="number1"
                 style={{
                   border: "2px solid #7400B8",
-                  height: "30vh",
-                  width: "30vh",
+                  height: "10vw",
+                  width: "10vw",
                   margin: "5px",
                 }}
                 onClick={() => this.selectedNumber(this.state.numberIndex[0])}>
@@ -87,11 +87,11 @@ class NumberPicker extends Component {
               state: { selected: (this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[1], fortune: this.state.fortune },
             }}>
               <div
-                id="number2"
+                className="number2"
                 style={{
                   border: "2px solid #7400B8",
-                  height: "30vh",
-                  width: "30vh",
+                  height: "10vw",
+                  width: "10vw",
                   margin: "5px",
                 }}
                 onClick={() => this.selectedNumber(this.state.numberIndex[1])}>
@@ -113,11 +113,11 @@ class NumberPicker extends Component {
             }}>
 
               <div
-                id="number3"
+                className="number3"
                 style={{
                   border: "2px solid #7400B8",
-                  height: "30vh",
-                  width: "30vh",
+                  height: "10vw",
+                  width: "10vw",
                   margin: "5px",
                 }}
                 onClick={() => this.selectedNumber(this.state.numberIndex[2])}
@@ -132,11 +132,11 @@ class NumberPicker extends Component {
             }}>
 
               <div
-                id="number4"
+                className="number4"
                 style={{
                   border: "2px solid #7400B8",
-                  height: "30vh",
-                  width: "30vh",
+                  height: "10vw",
+                  width: "10vw",
                   margin: "5px",
                 }}
                 onClick={() => this.selectedNumber(this.state.numberIndex[3])}>

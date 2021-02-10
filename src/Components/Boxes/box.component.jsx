@@ -15,7 +15,8 @@ class Box extends Component {
         }}
       >
         <div>
-          <div style={{ display: "flex" }}>
+          <div style={{ display: "flex",justifyContent: "center",
+              alignItems: "center" }}>
             <Link
               to={{
                 pathname: "/numberPicker",
@@ -31,7 +32,8 @@ class Box extends Component {
               <div className="box2"></div>
             </Link>
           </div>
-          <div style={{ display: "flex" }}>
+          <div style={{ display: "flex", justifyContent: "center",
+              alignItems: "center"}}>
             <Link to={{
               pathname: "/numberPicker",
               state: { colorSelected: "Blue" },
