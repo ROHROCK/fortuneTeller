@@ -6,7 +6,7 @@ import VikrantImage from "../../Assets/Icons/Team/vikrant.jpeg";
 var info = [
   {
     name: "Rohit Agharkar",
-    desc: "I am inquisitive , Love to build things ,just like this fortune web app !",
+    desc: "I am full stack engineer and a problem solver with passion for building things just like this fortune web app !",
     profilePath: RohitImage,
     website: "https://www.linkedin.com/in/rohit-agharkar-15793a127/",
     websitetype: "LinkedIn",

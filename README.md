@@ -1,6 +1,7 @@
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=ROHROCK_newyearnewhack&metric=bugs)](https://sonarcloud.io/dashboard?id=ROHROCK_newyearnewhack)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ROHROCK_newyearnewhack&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=ROHROCK_newyearnewhack)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ROHROCK_newyearnewhack&metric=security_rating)](https://sonarcloud.io/dashboard?id=ROHROCK_newyearnewhack)
+![Deploy to Firebase Hosting on merge](https://github.com/ROHROCK/fortuneTeller/workflows/Deploy%20to%20Firebase%20Hosting%20on%20merge/badge.svg?branch=main)
 # Origami Fortune Teller <img src="https://img.icons8.com/cotton/64/000000/crystal-ball.png"/>
 ![Capture7](https://user-images.githubusercontent.com/36737476/103480738-10917e80-4dfc-11eb-8881-83861af17d6e.PNG)
 
