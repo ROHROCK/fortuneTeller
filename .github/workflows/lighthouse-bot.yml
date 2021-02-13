@@ -1,0 +1,19 @@
+name: Lighthouse Check
+on: [pull_request]
+
+jobs:
+  lighthouse-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - run: mkdir /tmp/artifacts
+    - name: Run Lighthouse
+      uses: foo-software/lighthouse-check-action@master
+      with:
+        accessToken: ${{ secrets.LIGHTHOUSE_CHECK_GITHUB_ACCESS_TOKEN }}
+        outputDirectory: /tmp/artifacts
+        urls: 'https://www.fortuneteller2021.co/,https://www.fortuneteller2021.co/box,https://www.fortuneteller2021.co/numberPicker,https://www.fortuneteller2021.co/about'
+    - name: Upload artifacts
+      uses: actions/upload-artifact@master
+        name: Lighthouse reports
+        path: /tmp/artifacts
