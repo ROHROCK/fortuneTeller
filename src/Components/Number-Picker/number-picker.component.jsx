@@ -56,7 +56,7 @@ class NumberPicker extends Component {
             alignSelf: "center",
             color: "green",
             fontFamily: "Bungee Shade, cursive",
-            fontSize: "40px",
+            fontSize: "4vw",
           }}
         >
           <div
@@ -73,13 +73,11 @@ class NumberPicker extends Component {
               <div
                 className="number1"
                 style={{
-                  border: "2px solid #7400B8",
-                  height: "10vw",
-                  width: "10vw",
-                  margin: "5px",
+                  border: "0.3vw solid #7400B8",
+                  margin: "2vw",
                 }}
                 onClick={() => this.selectedNumber(this.state.numberIndex[0])}>
-                <h1>{(this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[0]}</h1>
+                <p>{(this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[0]}</p>
               </div>
             </Link>
             <Link to={{
@@ -89,13 +87,11 @@ class NumberPicker extends Component {
               <div
                 className="number2"
                 style={{
-                  border: "2px solid #7400B8",
-                  height: "10vw",
-                  width: "10vw",
-                  margin: "5px",
+                  border: "0.3vw solid #7400B8",
+                  margin: "2vw",
                 }}
                 onClick={() => this.selectedNumber(this.state.numberIndex[1])}>
-                <h1>{(this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[1]}</h1>
+                <p>{(this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[1]}</p>
               </div>
 
             </Link>
@@ -115,14 +111,12 @@ class NumberPicker extends Component {
               <div
                 className="number3"
                 style={{
-                  border: "2px solid #7400B8",
-                  height: "10vw",
-                  width: "10vw",
-                  margin: "5px",
+                  border: "0.3vw solid #7400B8",
+                  margin: "2vw",
                 }}
                 onClick={() => this.selectedNumber(this.state.numberIndex[2])}
               >
-                <h1>{(this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[2]}</h1>
+                <p>{(this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[2]}</p>
               </div>
 
             </Link>
@@ -134,23 +128,21 @@ class NumberPicker extends Component {
               <div
                 className="number4"
                 style={{
-                  border: "2px solid #7400B8",
-                  height: "10vw",
-                  width: "10vw",
-                  margin: "5px",
+                  border: "0.3vw solid #7400B8",
+                  margin: "2vw",
                 }}
                 onClick={() => this.selectedNumber(this.state.numberIndex[3])}>
 
-                <h1>{(this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[3]}</h1>
+                <p>{(this.state.numberIndex === undefined) ? "Wait" : this.state.numberIndex[3]}</p>
               </div>
 
             </Link>
           </div>
         </div>
         <div
-          style={{ color: "white", alignSelf: "center", fontSize: "40px" }}
+          style={{ color: "white", alignSelf: "center", fontSize: "5vw" }}
         >
-          <h1>Choose A Number</h1>
+          <p>Choose A Number</p>
         </div>
       </div>
     );

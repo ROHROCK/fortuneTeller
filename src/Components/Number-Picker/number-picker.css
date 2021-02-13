@@ -1,13 +1,17 @@
 .numberpickerdiv {
   font-family: "Bungee Shade", cursive;
 }
-
+.number1, .number2, .number3, .number4{
+  height: 15vw;
+  width: 15vw;
+  font-size: 4vh;
+}
 
 @media screen and (max-width: 800px) {
   .number1, .number2, .number3, .number4{
-    width: 20vw; 
-    height: 20vw;
-      
+    width: 10vh; 
+    height: 10vh;
+    font-size: 4vh;
   }
   .text-color, h1 {
       font-size:2em;
