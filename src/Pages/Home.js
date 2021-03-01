@@ -8,8 +8,18 @@ import { ReactComponent as Flower } from "../Assets/Icons/flower.svg";
 import { ReactComponent as ChevronRight } from "../Assets/Icons/chevron-right.svg";
 
 import {Animated} from "react-animated-css";
+import ReactGA from 'react-ga';
+import { useEffect } from "react";
+
+function initializeReactGA() {
+  ReactGA.initialize('UA-123791717-1');
+  ReactGA.pageview('/');
+}
 
 function Home() {
+  useEffect(() => {
+    initializeReactGA();
+  }, []);
   return (
     <div className="home_Container">
       <div
