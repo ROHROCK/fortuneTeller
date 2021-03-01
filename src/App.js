@@ -5,7 +5,7 @@ import NumberPicker from "./Components/Number-Picker/number-picker.component";
 import Navbar from "./Components/Navbar/Navbar";
 import FortuneTeller from "./Components/Fortune-Teller/fortune-teller.component";
 import Box from "./Components/Boxes/box.component";
-
+import ReactGA from 'react-ga';
 const Home = lazy(() => import("./Pages/Home"));
 const About = lazy(() => import("./Pages/About"));
 const NotFound = lazy(() => import("./Pages/About"));
@@ -22,6 +22,8 @@ function App() {
 }
 
 function Routes() {
+  ReactGA.initialize('G-KN68197MVJ');
+  ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <Suspense fallback={<Loading />}>
       <Switch>
